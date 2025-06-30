@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>AI CaF 저장기술</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(sec => sec.style.display = 'none');
+      const target = document.getElementById(id);
+      if (target) target.style.display = 'block';
+      window.scrollTo(0, 0);
+    }
+
+    window.onload = () => {
+      // 기본 섹션은 main만 보여줌
+      showSection('main');
+    }
+  </script>
+</head>
+<body>
+  <header id="home">
+    <h1>AI CaF Hybrid 저장기술</h1>
+    <p>한국형 장기비축 저장 산업의 핵심 인프라</p>
+  </header>
+
+  <nav>
+    <a href="#company" onclick="showSection('company')">회사소개</a>
+    <a href="#dca" onclick="showSection('dca')">DCA 저장</a>
+    <a href="#hybridca" onclick="showSection('hybridca')">HybridCA 저장</a>
+    <a href="#ma" onclick="showSection('ma')">MA 저장</a>
+    <a href="#about" onclick="showSection('about')">ABOUT</a>
+  </nav>
+
+  <section id="main">
+    <img src="images/slide2.png" alt="메인페이지">
+  </section>
+
+  <section id="company" style="display:none;">
+    <h2>회사소개</h2>
+    <img src="images/slide3.png" alt="회사소개1">
+    <img src="images/slide4.png" alt="회사소개2">
+  </section>
+
+  <section id="dca" style="display:none;">
+    <h2>DCA 저장</h2>
+    <img src="images/slide5.png" alt="DCA1">
+    <img src="images/slide6.png" alt="DCA2">
+  </section>
+
+  <section id="hybridca" style="display:none;">
+    <h2>HybridCA 저장</h2>
+    <img src="images/slide7.png" alt="HybridCA">
+  </section>
+
+  <section id="ma" style="display:none;">
+    <h2>MA 저장</h2>
+    <img src="images/slide8.png" alt="MA 저장">
+  </section>
+
+  <section id="about" style="display:none;">
+    <h2>ABOUT</h2>
+    <img src="images/slide9.png" alt="About">
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AI CaF Hybrid Technology</p>
+  </footer>
+</body>
+</html>
