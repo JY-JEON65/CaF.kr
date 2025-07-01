@@ -5,26 +5,29 @@ body {
 }
 header {
   background: url('images/slide1.png') center no-repeat;
-  background-size: cover; /* 'contain' 대신 'cover'로 변경하여 배경 이미지가 전체 너비를 채우도록 함 */
+  background-size: cover; /* 'cover'는 그대로 유지하여 이미지가 컨테이너를 채우도록 합니다. */
   color: white;
-  padding: 200px 20px;
+  padding: 140px 10%; /* 높이를 30% 줄임 (200px * 0.7 = 140px), 좌우 여백 10% 추가 */
   text-align: center;
 }
-header h2 { /* h1 대신 h2로 변경됨 */
-  font-size: 48px; /* 폰트 크기 조정 */
+header h2 {
+  font-size: 48px;
   margin-bottom: 10px;
   text-shadow: 2px 2px 4px #000;
 }
-header h4 { /* p 대신 h4로 변경됨 */
+header h4 {
   font-size: 24px;
 }
 
 /* 더 작은 화면을 위한 글꼴 크기 조정 */
 @media (max-width: 768px) {
-  header h2 { /* h1 대신 h2로 변경됨 */
+  header {
+    padding: 100px 10%; /* 작은 화면에서도 높이와 좌우 여백 조정 */
+  }
+  header h2 {
     font-size: 36px;
   }
-  header h4 { /* p 대신 h4로 변경됨 */
+  header h4 {
     font-size: 18px;
   }
 }
@@ -32,7 +35,7 @@ nav {
   background: #006699;
   text-align: center;
   padding: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* 그림자 추가 */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 nav a {
   color: white;
@@ -40,10 +43,10 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   padding: 5px 0;
-  transition: color 0.3s ease; /* 호버 효과 추가 */
+  transition: color 0.3s ease;
 }
 nav a:hover {
-  color: #cceeff; /* 호버 시 색상 변경 */
+  color: #cceeff;
 }
 /* 더 작은 화면에서 내비게이션 링크 쌓기 */
 @media (max-width: 600px) {
@@ -55,15 +58,14 @@ nav a:hover {
 
 section {
   padding: 40px 10px;
-  /* max-width, margin: auto는 content-wrapper로 이동 */
-  background-color: #f9f9f9; /* 섹션 배경색 추가 */
-  border-bottom: 1px solid #eee; /* 섹션 구분선 추가 */
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #eee;
 }
 
 .content-wrapper {
-  max-width: 1200px; /* 콘텐츠 최대 너비 설정 */
-  margin: auto; /* 중앙 정렬 */
-  padding: 0 20px; /* 좌우 여백 추가 */
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
 }
 
 section img {
@@ -71,13 +73,13 @@ section img {
   height: auto;
   max-width: 100%;
   margin: 10px 0;
-  border: 1px solid #eee; /* 테두리 색상 조정 */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 이미지 그림자 추가 */
+  border: 1px solid #eee;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 h2 {
   color: #003366;
   margin-bottom: 20px;
-  text-align: center; /* 제목 중앙 정렬 */
+  text-align: center;
 }
 footer {
   background: #003366;
