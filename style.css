@@ -7,7 +7,7 @@ header {
   background: url('images/slide1.png') center no-repeat;
   background-size: cover; /* 'cover'는 그대로 유지하여 이미지가 컨테이너를 채우도록 합니다. */
   color: white;
-  padding: 140px 30%; /* 높이를 30% 줄임 (200px * 0.7 = 140px), 좌우 여백 10% 추가 */
+  padding: 120px 40% ; /* 높이를 40% 줄임 (200px * 0.6 = 120px), 좌우 여백 10% 추가 */
   text-align: center;
 }
 header h2 {
@@ -16,7 +16,7 @@ header h2 {
   text-shadow: 2px 2px 4px #000;
 }
 header h4 {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 /* 더 작은 화면을 위한 글꼴 크기 조정 */
