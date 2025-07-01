@@ -5,10 +5,15 @@ body {
 }
 header {
   background: url('images/slide1.png') center no-repeat;
-  background-size: contain; /* 'cover'에서 'contain'으로 변경 */
+  background-size: contain; /* 이미지가 컨테이너 안에 완전히 포함되도록 유지 */
   color: white;
-  padding: 140px 10%;
+  padding-top: 140px; /* 기존과 동일하게 높이 조정 */
+  padding-bottom: 140px; /* 기존과 동일하게 높이 조정 */
+  /* padding-left: 10%; */ /* 이 부분은 max-width와 margin: auto로 대체되어 제거 */
+  /* padding-right: 10%; */ /* 이 부분은 max-width와 margin: auto로 대체되어 제거 */
   text-align: center;
+  max-width: 1200px; /* .content-wrapper와 동일한 최대 너비 설정 */
+  margin: 0 auto; /* 헤더를 가로 중앙에 정렬 */
 }
 header h2 {
   font-size: 48px;
@@ -19,10 +24,12 @@ header h4 {
   font-size: 24px;
 }
 
-/* 더 작은 화면을 위한 글꼴 크기 조정 */
 @media (max-width: 768px) {
   header {
-    padding: 100px 10%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    /* padding-left: 10%; */ /* 이 부분은 max-width와 margin: auto로 대체되어 제거 */
+    /* padding-right: 10%; */ /* 이 부분은 max-width와 margin: auto로 대체되어 제거 */
   }
   header h2 {
     font-size: 36px;
@@ -48,7 +55,6 @@ nav a {
 nav a:hover {
   color: #cceeff;
 }
-/* 더 작은 화면에서 내비게이션 링크 쌓기 */
 @media (max-width: 600px) {
   nav a {
     display: block;
