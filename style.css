@@ -10,20 +10,19 @@ header {
   text-align: center;
 }
 header h1 {
-  font-size: 48px;
+  font-size: 24px; /* 48px에서 24px로 변경됨 */
   margin-bottom: 10px;
   text-shadow: 2px 2px 4px #000;
 }
 /* 더 작은 화면을 위한 글꼴 크기 조정 */
 @media (max-width: 768px) {
   header h1 {
-    font-size: 36px;
+    font-size: 20px; /* 작은 화면을 위해 36px에서 20px로 변경됨 */
   }
   header p {
     font-size: 14px;
   }
 }
-
 nav {
   background: #006699;
   text-align: center;
